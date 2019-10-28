@@ -99,7 +99,7 @@ function RolePaper(props) {
   );
 }
 
-export default function SimpleContainer() {
+export default function Layout() {
   const classes = useStyles();
 
   return (
@@ -127,15 +127,15 @@ export default function SimpleContainer() {
             </Grid>
           </Grid>
           {/* Level 1 */}
-          <Grid container spacing={1}>
+          <Grid container spacing={0}>
             <Grid container xs={3} spacing={3}>
-              <Grid item xs={12} spacing={3}>
+              <Grid item xs={12} spacing={0}>
                 <TitlePaper
                   title="Recruitment"
                   styleName={classes.colorRecruitment}
                 />
               </Grid>
-              <Grid item xs={12} spacing={3}>
+              <Grid item xs={12} spacing={0}>
                 <RolePaper
                   title="Technical Recruiter Contract"
                   className={classes.paper}
